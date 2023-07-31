@@ -6,7 +6,6 @@ import { SignUpPage} from '../Pages/SignUpPage';
 function getUserName() {
     const currentDate = new Date();
     return "user"+ currentDate.getTime();
-
 }
 
 test('User should be able to signup to the application', async ({ page }) => {
@@ -88,7 +87,6 @@ test('User should be able to Delete multiple tasks', async ({ page }) => {
 
      await taskPage.deleteTask('Task to be deleted 2');
      await taskPage.deleteTask('Task to be deleted 3');
-
 
      await expect(page.locator("//tbody//tr")).toHaveCount(1);
      await expect(page.locator("//td[text()='Task to be deleted 1']")).toHaveCount(1);
