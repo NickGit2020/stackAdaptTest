@@ -1,0 +1,15 @@
+
+To PreLoad a Db with relevant data to speedup Testing 
+
+1 - I would have the db preloaded with an already signed-up user.
+    so we can use this user always to test the signing-in 
+     (in my curent test i used a created user as an example, but if the db gets reloded this test will forever fail).
+2 - I would have already signed-up Users with created Tasks, so i can just test the viewing of the the actual task, deletion or edition 
+    in my current Tests, I sign-up new users to do the Testing, this creates new users all the time, and new tasks that will endup being deleted, 
+
+3 - to architect sush a solution i would need access to the DB so i can tell which table will need what info, so I can build sql comand to do the Inserts before runnig the Tests, 
+    Or possible if we have a default Db that gets used all the time, I would used that create my users and tasks needed in Tests manually, and get the new Db(including our new test data) 
+    as our default Database.
+
+    all in all i have 2 options, if we can have the default Db modified I would get my testdata in there.
+    If we cant have so much testdata in teh default Database, I would need to write sql Inserts and delete comand to execute before running the Tests.

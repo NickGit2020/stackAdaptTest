@@ -12,6 +12,6 @@ exports.ProductDetailPage = class ProductDetailPage {
             this.addToWishListButton = page.locator("//div[@class='product-wishlist']//div[@role='button']");
             this.productTitle = page.locator('//h1[@class="product-title"]');         
             this.productShortDescription = page.locator('//span[@class="product-short-description"]//p');          
-            } 
+    } 
 }
 

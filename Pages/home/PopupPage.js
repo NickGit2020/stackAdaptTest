@@ -14,5 +14,5 @@ exports.PopupPage = class PopupPage {
             this.cookie_message = page.locator('//div[contains(@class, "wpcc-float")][1]//span');
             this.cookie_learnMore = page.locator('//div[contains(@class, "wpcc-float")][1]//span[@class ="wpcc-message"]/a');      
             this.cookie_accept_close = page.locator('//div[contains(@class, "wpcc-float")][1]//div[@class ="wpcc-compliance"]/a');      
-            }  
-         }
+     }  
+}
